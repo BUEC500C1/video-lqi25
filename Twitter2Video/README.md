@@ -19,7 +19,7 @@ python Twitter2Video.py
 ```
 <p align="center">   
 <img src="https://github.com/BUEC500C1/video-lqi25/blob/master/Twitter2Video/img/image.png"/> 
-</p>   
+</p>      
 ## Images to Video
 - Call the image2video function, passing in the name of the Twitter account.
 - Set the path to read pictures.
