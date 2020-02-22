@@ -11,7 +11,7 @@
 image = Image.open('Boston.jpg')
 ```
 ```python
-filename = "C:/Users/18367/Desktop/hw4/" + str(num) + ".png"
+filename = "/your/path/" + str(num) + ".png"
 ```
 - Open Terminal,run the following command,you will see images with text in the path set.
 ```python
@@ -20,3 +20,17 @@ python Twitter2Video.py
 <p align="center">   
 <img src="https://github.com/BUEC500C1/video-lqi25/blob/master/Twitter2Video/img/image.png"/> 
 </p>   
+## Images to Video
+- Call the image2video function, passing in the name of the Twitter account.
+- Set the path to read pictures.
+```python
+for filename in glob.glob('your/path/*.png'):
+```
+- Open Terminal,run the following command,You will see the .avi file named after your Twitter account, such as [CityOfBoston.avi](https://github.com/BUEC500C1/video-lqi25/blob/master/Twitter2Video/CityOfBoston.avi)
+```python
+python Twitter2Video.py
+```
+- Switch an image every three seconds in a video.
+<p align="center">   
+<img src="https://github.com/BUEC500C1/video-lqi25/blob/master/Twitter2Video/img/video.png"/> 
+</p>  
