@@ -27,11 +27,11 @@ python Twitter2Video.py
 ```python
 for filename in glob.glob('/your/path/*.png'):
 ```
-- Open Terminal,run the following command,You will see the .avi file named after your Twitter account, such as [CityOfBoston.avi](https://github.com/BUEC500C1/video-lqi25/blob/master/Twitter2Video/CityOfBoston.avi)
+- Open Terminal,run the following command,You will see the .avi file named after your Twitter account, such as [CityOfBoston.avi](https://github.com/BUEC500C1/video-lqi25/blob/master/Twitter2Video/CityOfBoston.avi),[mfaboston.avi](https://github.com/BUEC500C1/video-lqi25/blob/master/Twitter2Video/mfaboston.avi),[BU_Tweets.avi](https://github.com/BUEC500C1/video-lqi25/blob/master/Twitter2Video/BU_Tweets.avi)
 ```python
 python Twitter2Video.py
 ```
-- Switch an image every three seconds in a video.
+- Switch an image every three seconds in the video.
 <p align="center">   
 <img src="https://github.com/BUEC500C1/video-lqi25/blob/master/Twitter2Video/img/video.png"/> 
 </p>  
