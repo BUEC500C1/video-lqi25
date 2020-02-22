@@ -13,3 +13,10 @@ image = Image.open('Boston.jpg')
 ```python
 filename = "C:/Users/18367/Desktop/hw4/" + str(num) + ".png"
 ```
+- Open Terminal,run the following command,you will see images with text in the path set.
+```python
+python Twitter2Video.py
+```
+<p align="center">   
+<img src="https://github.com/BUEC500C1/video-lqi25/blob/master/Twitter2Video/img/image.png"/> 
+</p>   
