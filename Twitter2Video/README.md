@@ -25,7 +25,7 @@ python Twitter2Video.py
 - Call the image2video function, passing in the name of the Twitter account.
 - Set the path to read pictures.
 ```python
-for filename in glob.glob('your/path/*.png'):
+for filename in glob.glob('/your/path/*.png'):
 ```
 - Open Terminal,run the following command,You will see the .avi file named after your Twitter account, such as [CityOfBoston.avi](https://github.com/BUEC500C1/video-lqi25/blob/master/Twitter2Video/CityOfBoston.avi)
 ```python
