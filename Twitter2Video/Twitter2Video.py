@@ -39,7 +39,7 @@ def tweet2image(tweet_name):
         (x, y) = (100, 100)
         color = 'rgb(0, 0, 0)'
         draw.text((x, y), tweet.text, font=fnt, fill= color)
-        filename = "C:/Users/18367/Desktop/hw4/" + str(num) + ".png"
+        filename = "/your/path/" + str(num) + ".png"
         image.save(filename)
         return "Images created!"
 
@@ -47,7 +47,7 @@ def image2video(video_name):
     if video_name == "" :
         return "No video name entered!"
     img_array = []
-    for filename in glob.glob('C:/Users/18367/Desktop/hw4/*.png'):
+    for filename in glob.glob('/your path/*.png'):
         img = cv2.imread(filename)
         try:
             height, width, layers = img.shape
