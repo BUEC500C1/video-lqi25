@@ -17,4 +17,8 @@ item_list = ['BU_Tweets','CNN','Nike','mfaboston']
 python queue_mul.py
 ```
 - There are three threads running at the same time, and after one thread finishes running, the fourth thread is executed.
+<p align="center">   
+<img src="https://github.com/BUEC500C1/video-lqi25/blob/master/Threads/threads.png"/> 
+</p>
+
 
