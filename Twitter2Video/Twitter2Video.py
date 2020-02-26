@@ -11,9 +11,16 @@ import os
 import numpy as np
 import glob
 import configparser
-from keys import *
 
-auth = tweepy.OAuthHandler(consumer_key, consumer_secret)  
+config = configparser.ConfigParser()
+config.read("keys")
+
+consumer_key = config.get('auth', 'consumer_key').strip()
+consumer_secret = config.get('auth', 'consumer_secret').strip()
+access_token = config.get('auth', 'access_token').strip()
+access_token_secret = config.get('auth', 'access_token_secret').strip()
+
+auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)   
 api = tweepy.API(auth)
 
@@ -39,7 +46,7 @@ def tweet2image(tweet_name):
         (x, y) = (100, 100)
         color = 'rgb(0, 0, 0)'
         draw.text((x, y), tweet.text, font=fnt, fill= color)
-        filename = "/your/path/" + str(num) + ".png"
+        filename = "C:/Users/18367/Desktop/hw4/" + str(num) + ".png"
         image.save(filename)
         return "Images created!"
 
@@ -47,7 +54,7 @@ def image2video(video_name):
     if video_name == "" :
         return "No video name entered!"
     img_array = []
-    for filename in glob.glob('/your/path/*.png'):
+    for filename in glob.glob('C:/Users/18367/Desktop/hw4/*.png'):
         img = cv2.imread(filename)
         try:
             height, width, layers = img.shape
