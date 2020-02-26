@@ -50,7 +50,7 @@ def tweet2image(tweet_name):
             image.save(filename)
             return "Images created!"
     except AttributeError:
-            print("there is no keys")
+            pass
 
 def image2video(video_name):
     if video_name == "" :
