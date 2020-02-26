@@ -5,7 +5,15 @@
 - Display each video frame for 3 seconds.
 ## Twitter to Image
 - Open [Twitter Developer](https://developer.twitter.com/) and apply for a developer account.Once done, create your own app and get consumer_key, consumer_secret, access_token, access_token_secret.
-- Twitter keys are stored in the [keys.py](https://github.com/BUEC500C1/video-lqi25/blob/master/Twitter2Video/keys.py) file. Use your own twitter keys.py to replace this file so that Twitter2Video.py can execute successfully.
+- Twitter keys are stored in the [keys](https://github.com/BUEC500C1/video-lqi25/blob/master/Twitter2Video/keys) file. Its format is：
+```python
+[auth]
+consumer_key =
+consumer_secret =
+access_token =
+access_token_secret = 
+```
+- Use your own twitter key to replace this file so that Twitter2Video.py can execute successfully.
 - Open Twitter2Video.py,call the tweet2image function, and pass the tweet account name you want to get into the function.
 - In the tweet2image function, set the background image name and the path to save the image.
 ```python
