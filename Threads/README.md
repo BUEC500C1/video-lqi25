@@ -7,7 +7,7 @@
 ## Achievements
 - queue_mul.py uses queue to manage threads.
 - Each process will call the tweet2image () and image2video () functions in Twitter2Video.py. They converted 20 tweets under the Twitter user's name into images and then videos.
-- In order for Twitter2Video.py to run successfully, follow the instructions in [Twitter2Video](https://github.com/BUEC500C1/video-lqi25/tree/master/Twitter2Video), store the twitter keys in the keys.py file, and set the paths in the tweet2image () and image2video () functions.
+- In order for Twitter2Video.py to run successfully, follow the instructions in [Twitter2Video](https://github.com/BUEC500C1/video-lqi25/tree/master/Twitter2Video), store the twitter keys in the keys file, and set the paths in the tweet2image () and image2video () functions.
 - In queue_mul.py, set item_list and set the number of threads to 3.
 ```python
 item_list = ['BU_Tweets','CNN','Nike','mfaboston']
