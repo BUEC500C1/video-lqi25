@@ -40,33 +40,41 @@ def tweet2image(tweet_name):
             num += 1
             text_noem = highpoints.sub('--emoji--', tweet.text)
             text_noem = text_noem.encode('utf8')
-            image = Image.open('background.jpg')
+            image = Image.open('Boston.jpg')
             draw = ImageDraw.Draw(image)
             fnt = ImageFont.truetype('Lato-BlackItalic.ttf', 50)
             (x, y) = (100, 100)
             color = 'rgb(0, 0, 0)'
             draw.text((x, y), tweet.text, font=fnt, fill= color)
-            filename = "/your/path/" + str(num) + ".png"
+            filename = "C:/Users/18367/Desktop/hw4/" + str(num) + ".png"
             image.save(filename)
-            return "Images created!"
+        print("Images created")
+        return "Images created!"
     except AttributeError:
-            pass
+        print("No keys in the file")
+        return "No keys in the keys file"
+
 
 def image2video(video_name):
     if video_name == "" :
         return "No video name entered!"
     img_array = []
-    for filename in glob.glob('/your/path/*.png'):
+    for filename in glob.glob('C:/Users/18367/Desktop/hw4/*.png'):
         img = cv2.imread(filename)
         try:
             height, width, layers = img.shape
             size = (width, height)
+            #print(size)
+            img_array.append(img)
         except AttributeError:
             pass
-        img_array.append(img)
+        #img_array.append(img)
     video_name += ".avi"
     out = cv2.VideoWriter(video_name, cv2.VideoWriter_fourcc('I', '4', '2', '0'), 1 / 3, size)
     for i in range(len(img_array)):
         out.write(img_array[i])
     out.release()
+    print("video created")
     return "Video created!"
+
+#tweet2image("mfaboston")
